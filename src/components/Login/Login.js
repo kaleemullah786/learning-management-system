@@ -28,11 +28,12 @@ const Login = () => {
           <p className="form-title">Welcome back</p>
           <p>Login to the Dashboard</p>
           <Form.Item
-            name="username"
+            name="email"
             rules={[{ required: true, message: 'Please input your username!' }]}
           >
             <Input
-              placeholder="Username"
+              placeholder="johndoe@example.com"
+              // onChange={e => setEmail(e.target.value)}
             />
           </Form.Item>
 

@@ -1,12 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Form, Input, Checkbox, Button} from 'antd';
 import 'antd/dist/antd.min.css';
 import './index.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
 
 const Register = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+
+
+  const {createUser} = UserAuth()
+  const navigate = useNavigate()
+
+
   const onFinish = values => {
-    console.log('Success:', values);
+    console.log('Received values of form: ', values);
+    createUser(values.email, values.password)
+    .then(() => {
+      navigate('/signin')
+    })
+    .catch(error => {
+      setError(error.message)
+    })
   };
 
   const onFinishFailed = errorInfo => {
@@ -24,6 +41,7 @@ const Register = () => {
           initialValues={{ remember: true }}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
+          // onSubmit = {handleSubmit}
         >
           <p className="form-title">Create account</p>
       
@@ -33,23 +51,17 @@ const Register = () => {
           >
             <Input
               placeholder="johndoe@example.com"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Item>
-          <Form.Item
-            name="username"
-            rules={[{ required: true, message: 'Please input your username!' }]}
-          >
-            <Input
-              placeholder="Username"
-            />
-          </Form.Item>
-
+          
           <Form.Item
             name="password"
             rules={[{ required: true, message: 'Please input your password!' }]}
           >
             <Input.Password 
               placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Item>
 
