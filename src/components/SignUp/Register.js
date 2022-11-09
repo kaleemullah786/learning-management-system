@@ -16,7 +16,6 @@ const Register = () => {
 
 
   const onFinish = values => {
-    console.log('Received values of form: ', values);
     createUser(values.email, values.password)
     .then(() => {
       navigate('/signin')
@@ -24,10 +23,6 @@ const Register = () => {
     .catch(error => {
       setError(error.message)
     })
-  };
-
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
   };
 
   return (
@@ -40,8 +35,6 @@ const Register = () => {
           name="register-form"
           initialValues={{ remember: true }}
           onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          // onSubmit = {handleSubmit}
         >
           <p className="form-title">Create account</p>
       
