@@ -1,7 +1,8 @@
 import React from 'react';
 import {Form, Input, Checkbox, Button} from 'antd';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import './index.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const onFinish = values => {
@@ -53,6 +54,7 @@ const Login = () => {
               LOGIN
             </Button>
           </Form.Item>
+          <p>Don't have an account? <Link to='/signup' className='underline'>Register</Link></p>
         </Form>
       </div>
     </div>

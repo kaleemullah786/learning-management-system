@@ -51,6 +51,7 @@ body {
   font-weight: bold;
   line-height: 1;
   margin-bottom: 0;
+  padding: 20px;
 }
 #register-form .ant-form-item-label > label.ant-form-item-required::before {
   display: none;
@@ -61,9 +62,13 @@ body {
 #register-form .ant-input-affix-wrapper {
   padding: 12px 15px;
 }
+#register-form_email{
+  height: 48px;
+}
 #register-form_username {
   height: 48px;
 }
+
 #register-form .ant-btn {
   height: 42px;
   letter-spacing: 1px;

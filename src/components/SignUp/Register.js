@@ -1,6 +1,6 @@
 import React from 'react';
 import {Form, Input, Checkbox, Button} from 'antd';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import './index.css'
 
 const Register = () => {
@@ -25,13 +25,13 @@ const Register = () => {
           onFinishFailed={onFinishFailed}
         >
           <p className="form-title">Create account</p>
+      
           <Form.Item
             name="email"
-            rules={[{ required: true, message: 'Please input your emaild!' }]}
+            rules={[{ required: true, message: 'Please input your username!' }]}
           >
             <Input
-              type="email"
-              placeholder="Email"
+              placeholder="johndoe@example.com"
             />
           </Form.Item>
           <Form.Item
