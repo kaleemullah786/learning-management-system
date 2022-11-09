@@ -17,10 +17,12 @@ export const AuthContextProvider = ({children}) => {
     }
 
     //sign in user
-    
+    const login = (email, password) => {
+      return signInWithEmailAndPassword(auth, email, password)
+    }
 
     return (
-      <UserContext.Provider value={{createUser}}>
+      <UserContext.Provider value={{createUser, login}}>
             {children}
         </UserContext.Provider>
     )
