@@ -1,17 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Form, Input, Checkbox, Button} from 'antd';
 import 'antd/dist/antd.min.css';
 import './index.css'
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
 
 const Login = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+
+  const navigate = useNavigate()
+
+  const { login } = UserAuth();
+
+
+
   const onFinish = values => {
-    console.log('Success:', values);
+    console.log('success');
+    login(values.email, values.password)
+    .then(() => {
+      navigate('/')
+    })
+    .catch(error => {
+      setError(error.message)
+    })
   };
 
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
-  };
+
 
   return (
     <div className="login-page">
@@ -23,7 +39,7 @@ const Login = () => {
           name="login-form"
           initialValues={{ remember: true }}
           onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
+
         >
           <p className="form-title">Welcome back</p>
           <p>Login to the Dashboard</p>
