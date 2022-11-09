@@ -2,6 +2,7 @@ import React from 'react';
 import {Form, Input, Checkbox, Button} from 'antd';
 import 'antd/dist/antd.min.css';
 import './index.css'
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const onFinish = values => {
@@ -61,6 +62,7 @@ const Register = () => {
               SIGN UP
             </Button>
           </Form.Item>
+          <p>Already have an account? <Link to='/signin' className='underline'>Sign In</Link></p>
         </Form>
       </div>
     </div>
