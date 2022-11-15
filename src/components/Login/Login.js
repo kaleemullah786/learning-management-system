@@ -27,8 +27,6 @@ const Login = () => {
     })
   };
 
-
-
   return (
     <div className="login-page">
       <div className="login-box">
@@ -49,7 +47,6 @@ const Login = () => {
           >
             <Input
               placeholder="johndoe@example.com"
-              // onChange={e => setEmail(e.target.value)}
             />
           </Form.Item>
 
@@ -71,7 +68,7 @@ const Login = () => {
               LOGIN
             </Button>
           </Form.Item>
-          <p>Don't have an account? <Link to='/signup' className='underline'>Register</Link></p>
+          <p>Don't have an account? <Link to='/register' className='underline'>Register</Link></p>
         </Form>
       </div>
     </div>

@@ -67,7 +67,7 @@ const Register = () => {
               SIGN UP
             </Button>
           </Form.Item>
-          <p>Already have an account? <Link to='/signin' className='underline'>Sign In</Link></p>
+          <p>Already have an account? <Link to='/login' className='underline'>Sign In</Link></p>
         </Form>
       </div>
     </div>
