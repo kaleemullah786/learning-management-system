@@ -1,7 +1,7 @@
 import './App.css';
 
-import Signup from './components/Signup';
-import Signin from './components/Signin';
+import Signup from './components/SignUp/Signup';
+import Login from './components/Login/Login';
 import Welcome from './components/Welcome';
 import Myclassroom from './components/Myclassroom';
 import Resetpsw from './components/Resetpsw';
@@ -26,21 +26,19 @@ import Projects from './components/Projects';
 import Discuss from './components/Discuss';
 import Assisment5 from './components/Assisment5';
 import Courceinfo1 from './components/Courceinfo1';
+import {Routes,Route} from 'react-router-dom';
+import { AuthContextProvider } from "./context";
 
-
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      
-      <BrowserRouter>
+    <AuthContextProvider>
       <Routes>
-      
         <Route path="/" element={<Signup/>}></Route>
-        <Route path="/Signin" element={<Signin/>}></Route>
-        <Route path="/Welcome" element={<Welcome/>}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/welcome" element={<Welcome/>}></Route>
         <Route path="/Myclassroom" element={<Myclassroom/>}></Route>
         <Route path='/Resetpsw' element={<Resetpsw/>}></Route>
         <Route path='/Orderdetails' element={<Orderdetails/>}></Route>
@@ -66,7 +64,7 @@ function App() {
         <Route path='/Courceinfo1' element={<Courceinfo1/>}></Route>
        
       </Routes>
-      </BrowserRouter>
+    </AuthContextProvider>
 
 
       </div>
