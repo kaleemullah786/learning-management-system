@@ -28,6 +28,7 @@ import Assisment5 from './components/Assisment5';
 import Courceinfo1 from './components/Courceinfo1';
 import {Routes,Route} from 'react-router-dom';
 import { AuthContextProvider } from "./context";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 
 
@@ -38,7 +39,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Signup/>}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/welcome" element={<Welcome/>}></Route>
+        <Route
+          path='/welcome'
+          element={
+            <ProtectedRoute>
+              <Welcome />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/Myclassroom" element={<Myclassroom/>}></Route>
         <Route path='/Resetpsw' element={<Resetpsw/>}></Route>
         <Route path='/Orderdetails' element={<Orderdetails/>}></Route>
