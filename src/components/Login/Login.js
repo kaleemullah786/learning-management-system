@@ -68,7 +68,7 @@ const Login = () => {
               LOGIN
             </Button>
           </Form.Item>
-          <p>Don't have an account? <Link to='/' className='underline'>Register</Link></p>
+          <p>Don't have an account? <Link to='/register' className='underline'>Register</Link></p>
         </Form>
       </div>
     </div>
