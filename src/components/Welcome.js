@@ -1,5 +1,4 @@
 import React from 'react'
-import One from "../../src/img/logo.png";
 import Two from "../../src/img/LMS-Assets/amazon.jpg";
 import Three from "../../src/img/LMS-Assets/python.jpg";
 import Four from "../../src/img/LMS-Assets/dev_ops.jpg";
@@ -11,10 +10,6 @@ var Welcome=()=> {
     return (
 
         <div >
-            <div class="flex">
-                <img class="p-10 h-[20%] w-[20%]" src={One} alt="this is logo" />
-                < FaUserCircle size={50} color={'gray'} class="absolute left-[92%] top-[8%]" />
-            </div>
             <div>
                 <p class="text-[#4285F2] text-5xl font-semibold pt-16">Welcome Daniel Kaleem</p>
                 <p class="text-gray-500 text-2xl font-semibold pt-16">Browse Programs</p>
