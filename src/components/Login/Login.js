@@ -16,7 +16,6 @@ const Login = () => {
 
 
   const onFinish = values => {
-    console.log('success');
     login(values.email, values.password)
     .then(() => {
       navigate('/welcome')
@@ -43,7 +42,7 @@ const Login = () => {
           <p>Login to the Dashboard</p>
           <Form.Item
             name="email"
-            rules={[{ required: true, message: 'Please input your username!' }]}
+            rules={[{ required: true, message: 'Please input your email!' }]}
           >
             <Input
               placeholder="johndoe@example.com"
@@ -68,7 +67,7 @@ const Login = () => {
               LOGIN
             </Button>
           </Form.Item>
-          <p>Don't have an account? <Link to='/' className='underline'>Register</Link></p>
+          <p>Don't have an account? <Link to='/register' className='underline'>Register</Link></p>
         </Form>
       </div>
     </div>

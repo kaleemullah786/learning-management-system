@@ -13,7 +13,7 @@ export const AuthContextProvider = ({children}) => {
     const [user, setUser] = useState({})
     // create new user
     const createUser =(email, password) =>{
-        return createUserWithEmailAndPassword(auth, email, password)
+      return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // sign in user
@@ -24,7 +24,6 @@ export const AuthContextProvider = ({children}) => {
     //get current user information
     useEffect(() => {
       const user = onAuthStateChanged(auth, (currentUser)=>{
-        console.log(currentUser);
         setUser(currentUser)
       })
       return () =>{

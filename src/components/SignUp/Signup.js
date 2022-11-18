@@ -16,6 +16,7 @@ const Register = () => {
 
 
   const onFinish = values => {
+    console.log(values.email, values.password);
     createUser(values.email, values.password)
     .then(() => {
       navigate('/login')

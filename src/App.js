@@ -31,6 +31,7 @@ import Navbar from './components/Navbar/Navbar'
 import {Routes,Route} from 'react-router-dom';
 import { AuthContextProvider } from "./context";
 import ProtectedRoute from "./components/ProtectedRoute";
+import StudentDashboard from './components/Dashboard/StudentDashboard';
 
 
 
@@ -38,9 +39,11 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
+
       <AuthContextProvider>
       <Routes>
+        <Route path='/dashboard' element={<StudentDashboard />} />
         <Route path="/register" element={<Signup/>}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route
