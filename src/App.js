@@ -1,5 +1,6 @@
 import './App.css';
 
+
 import Signup from './components/SignUp/Signup';
 import Login from './components/Login/Login';
 import Welcome from './components/Welcome';
@@ -26,16 +27,21 @@ import Projects from './components/Projects';
 import Discuss from './components/Discuss';
 import Assisment5 from './components/Assisment5';
 import Courceinfo1 from './components/Courceinfo1';
+import Navbar from './components/Navbar/Navbar'
 import {Routes,Route} from 'react-router-dom';
 import { AuthContextProvider } from "./context";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 
 
+
 function App() {
   return (
     <div className="App">
-    <AuthContextProvider>
+      <Navbar/>
+      <Routes>
+
+      <AuthContextProvider>
       <Routes>
         <Route path="/" element={<Signup/>}></Route>
         <Route path="/login" element={<Login />}></Route>
@@ -72,7 +78,8 @@ function App() {
         <Route path='/Courceinfo1' element={<Courceinfo1/>}></Route>
        
       </Routes>
-    </AuthContextProvider>
+      </AuthContextProvider>
+
 
 
       </div>
