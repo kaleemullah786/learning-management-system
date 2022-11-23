@@ -1,0 +1,96 @@
+{
+"courses": [
+    {
+        "name": "Data_Science",
+        "subcourses": [
+            {
+                "title": "Data Science",
+                "description": "Data Science is the study of data. It involves developing methods of recording, storing, and analyzing data to effectively extract useful information. The goal of data science is to gain insights and knowledge from any type of data — both structured and unstructured.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 0
+            },
+            {
+                "title": "Data Analysis",
+                "description": "Data analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, in different business, science, and social science domains.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 1
+            },
+            {
+                "title": "Data Visualization",
+                "description": "Data visualization or data visualisation is viewed by many disciplines as a modern equivalent of visual communication. It involves the creation and study of the visual representation of data, meaning information that has been abstracted in some schematic form, including attributes or variables for the units of information.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "name": "Web_Development",
+        "subcourses": [
+            {
+                "title": "HTML",
+                "description": "HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML elements label pieces of content such as \"this is a heading\", \"this is a paragraph\", \"this is a link\", etc. Browsers do not display the HTML tags, but use them to render the content of the page.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 3
+            },
+            {
+                "title": "CSS",
+                "description": "CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 4
+            },
+            {
+                "title": "JavaScript",
+                "description": "JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced. 1. HTML to define the content of web pages 2. CSS to specify the layout of web pages 3. JavaScript to program the behavior of web pages Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 5 
+            }
+        ]
+    },
+    {
+        "name": "Business",
+        "subcourses": [
+            {
+                "title": "Business",
+                "description": "Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). Simply put, it is any activity or enterprise entered into for profit. It does not mean it is a company, a corporation, partnership, or have any such formal organization, but it can range from a street peddler to General Motors.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 6
+            },
+            {
+                "title": "Entrepreneurship",
+                "description": "Entrepreneurship is the process of designing, launching and running a new business, which is often initially a small business. The people who create these businesses are called entrepreneurs.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+        "id": 7
+            },
+            {
+                "title": "Personal Development",
+                "description": "Personal development covers activities that improve awareness and identity, develop talents and potential, build human capital and facilitate employability, enhance the quality of life and contribute to the realization of dreams and aspirations. Personal development takes place over the course of a person's entire life. Not limited to self-help, the concept involves formal and informal activities for developing others in roles such as teacher, guide, counselor, manager, life coach or mentor.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 8
+            }
+        ]
+    },
+    {
+        "name": "IT & Software",
+        "subcourses": [
+            {
+                "title": "IT Certification",
+                "description": "Information technology (IT) is the use of computers to store, retrieve, transmit, and manipulate data, or information, often in the context of a business or other enterprise. IT is considered to be a subset of information and communications technology (ICT). An information technology system (IT system) is generally an information system, a communications system or, more specifically speaking, a computer system – including all hardware, software and peripheral equipment – operated by a limited group of users.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 9
+            },
+            {
+                "title": "Networking & Security",
+                "description": "Computer security, cybersecurity or information technology security (IT security) is the protection of computer systems from theft or damage to their hardware, software or electronic data, as well as from disruption or misdirection of the services they provide. The field is becoming more important due to increased reliance on computer systems, the Internet and wireless networks such as Bluetooth and Wi-Fi, and due to the growth of \"smart\" devices, including smartphones, televisions and the various devices that constitute the \"Internet of things\".",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 10
+            },
+            {
+                "title": "Operating Systems",
+                "description": "An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting software for cost allocation of processor time, mass storage, printing, and other resources.",
+                "img_src": "https://achievement-images.teamtreehouse.com/badges_intro_to_python_stage6.png",
+                "id": 11
+            }
+        ]
+    }
+]
+}
