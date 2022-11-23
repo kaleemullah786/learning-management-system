@@ -18,7 +18,7 @@ const Login = () => {
   const onFinish = values => {
     login(values.email, values.password)
     .then(() => {
-      navigate('/welcome')
+      navigate('/dashboard')
     })
     .catch(error => {
       setError(error.message)
